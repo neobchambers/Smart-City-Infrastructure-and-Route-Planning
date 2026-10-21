@@ -1,0 +1,19 @@
+algorithm,vertices,edges,average_time_ns,operations,notes
+Kruskal,10,30,14781380,9,connected undirected
+Prim,10,30,6151220,91,connected undirected
+Dijkstra,10,30,9206960,78,non-negative weights
+KosarajuSCC,10,30,3609020,-1,directed graph; cycles allowed
+TopologicalDAG,10,30,17982460,-1,DAG; edges go from lower to higher vertex
+TopologicalCyclicInput,10,30,139820,-1,cycle presence is not guaranteed for every generated graph
+Kruskal,100,500,2661820,281,connected undirected
+Prim,100,500,3165260,1501,connected undirected
+Dijkstra,100,500,3344300,1192,non-negative weights
+KosarajuSCC,100,500,2135360,-1,directed graph; cycles allowed
+TopologicalDAG,100,500,717420,-1,DAG; edges go from lower to higher vertex
+TopologicalCyclicInput,100,500,171060,-1,cycle presence is not guaranteed for every generated graph
+Kruskal,1000,5000,13442080,4543,connected undirected
+Prim,1000,5000,24555620,15001,connected undirected
+Dijkstra,1000,5000,14230180,11961,non-negative weights
+KosarajuSCC,1000,5000,7491020,-1,directed graph; cycles allowed
+TopologicalDAG,1000,5000,5532420,-1,DAG; edges go from lower to higher vertex
+TopologicalCyclicInput,1000,5000,2122840,-1,cycle presence is not guaranteed for every generated graph
