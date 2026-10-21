@@ -5,32 +5,6 @@ This Java application models city districts as vertices and roads or service con
 
 Vertices are numbered from 0 to V - 1. The graph uses an adjacency list for neighbor access and an edge list for algorithms that process all edges. Undirected edges are stored in the edge list once and in both endpoint adjacency lists.
 
-## Project Structure
-assignment-3/
-├── src/
-│   ├── Main.java
-│   ├── graph/
-│   │   ├── Edge.java
-│   │   └── Graph.java
-│   ├── dsu/
-│   │   └── DisjointSetUnion.java
-│   ├── mst/
-│   │   ├── Kruskal.java
-│   │   ├── Prim.java
-│   │   └── MSTResult.java
-│   ├── connectivity/
-│   │   └── ConnectivityAlgorithms.java
-│   ├── shortestpath/
-│   │   └── Dijkstra.java
-│   ├── experiments/
-│   │   ├── GraphGenerator.java
-│   │   └── Benchmark.java
-│   └── tests/
-│       └── AlgorithmTests.java
-└── results/
-├── tables/
-└── plots/
-
 ## Implementation
 - Graph and Edge
 Graph stores the number of vertices, whether the graph is directed, a list of edges, and an adjacency list. It validates vertex indices. Edge stores its source, destination, and integer weight.
@@ -63,7 +37,7 @@ Run experiments.Benchmark to generate results/tables/benchmark.csv. Insert the r
 ## Required plots:
 1. Average execution time (ns) vs. number of vertices.
 2. Average execution time (ns) vs. number of edges.
-   Use the measured CSV values to create the plots. Include axes, units, a legend, and a clear title. Because the three configurations change both V and E, the two required plots show the same three benchmark configurations from different x-axis perspectives; they do not independently isolate the effect of V and E.
+
 ## Testing
    tests.AlgorithmTests includes checks for:
 - Kruskal and Prim agreeing on the MST weight;
